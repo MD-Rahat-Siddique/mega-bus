@@ -129,3 +129,15 @@ nav ul li a:hover, a.active{
     font-size: 30px;
     cursor: pointer;
 }
+#book-button{
+    cursor: pointer;
+}
+.done{
+    margin: 10px 15px;
+}
+#done-message{
+    display: none;
+}
+.done-show-area button{
+    margin-top: 20px;
+}

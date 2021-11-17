@@ -41,7 +41,7 @@
         </div>
 
 
-        <div class="booking-form">
+        <div id="booking-area" class="booking-form">
             <h3>Explore By Bus</h3>
 
             <div class="inputs">
@@ -130,7 +130,45 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button onclick="showSuccessful()" class="btn-style">Book Now</button>
+        </div>
+
+        <!-- For Booking Result show -->
+        <div id="done-message" class="booking-form done-show-area">
+            <h3 class="done" style="text-align: center; font-size: 50px; color: green;">
+                <i class="fas fa-check-circle"></i>
+            </h3>
+
+            <h2 style="text-align: center; color: green;">Successful!</h2>
+            <p class="done">You have bought - </p>
+            <div class="amount done">
+                <div class="left">
+                    <h4>First Class Tickets :</h4>
+                </div>
+                <div class="right">
+                    <p id="done-vip">2</p>
+                </div>
+            </div>
+
+            <div class="amount done">
+                <div class="left">
+                    <h4>Economy Class Tickets :</h4>
+                </div>
+                <div class="right">
+                    <p id="done-economy">2</p>
+                </div>
+            </div>
+
+            <div class="amount done">
+                <div class="left">
+                    <h4>Total Price :</h4>
+                </div>
+                <div class="right">
+                    <p id="done-total">$550</p>
+                </div>
+            </div>
+            <p class="done" style="text-align: center;">Happy Journey<i class="far fa-smile" style="color: green; margin-left: 3px;"></i></p>
+            <a href="index.html"><button class="btn-style">Okay</button></a>
         </div>
     </main>
 
