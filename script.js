@@ -37,13 +37,20 @@ function showSuccessful() {
     const bookingArea = document.getElementById('booking-area');
     bookingArea.style.display = 'none';
 
-    const doneMessage = document.getElementById('done-message');
-    doneMessage.style.display = 'block';
-
+    const vip = getInputValue('vip');
+    const economy = getInputValue('economy');
+    if (vip > 0 || economy > 0) {
+        const doneMessage = document.getElementById('done-message');
+        doneMessage.style.display = 'block';
+    }
+    else{
+        const sorryMessage = document.getElementById('sorry-message');
+        sorryMessage.style.display = 'block';
+    }
     setTicketsNumber();
 };
 
-function setTicketsNumber(){
+function setTicketsNumber() {
     let doneVip = document.getElementById('done-vip');
     doneVip.innerText = getInputValue('vip');
 

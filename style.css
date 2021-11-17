@@ -138,6 +138,17 @@ nav ul li a:hover, a.active{
 #done-message{
     display: none;
 }
+.done-show-area{
+    width: 80%;
+    margin: 50px 0px 0px 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    height: 510px;
+}
 .done-show-area button{
     margin-top: 20px;
+}
+
+#sorry-message{
+    display: none;
 }
